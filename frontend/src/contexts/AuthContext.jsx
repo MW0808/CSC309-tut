@@ -35,7 +35,7 @@ export const AuthProvider = ({ children }) => {
                   });
               
                 const data = await res.json();
-                setUser(data);
+                setUser(data.user);
             }
           };
         
@@ -84,7 +84,7 @@ export const AuthProvider = ({ children }) => {
               });
           
             const data2 = await res2.json();
-            setUser(data2);
+            setUser(data2.user);
             navigate("/profile");
         }
         else{
