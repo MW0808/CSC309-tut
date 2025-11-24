@@ -88,7 +88,7 @@ export const AuthProvider = ({ children }) => {
             navigate("/profile");
         }
         else{
-            return data.error;
+            return data.message;
         }
     };
 
@@ -116,7 +116,7 @@ export const AuthProvider = ({ children }) => {
         }
         else{
             const data = await res.json();
-            return data.error;
+            return data.message;
         }
     };
 
